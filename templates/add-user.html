@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="add_user_form">
+    <h2>{{ title }}</h2>
+    <form action="save_user" method="post">
+        <div class="form_fields">
+            <p class="field">
+                Name : <input name="username" />
+            </p>
+            <p class="field">
+                Email : <input name="email" type="email" />
+            </p>
+            <p>
+                Password: <input name="password" type="password" />
+            </p>
+        </div>
+        <input type="submit" value="Send" class="user_btn" />
+    </form>
+</div>
+{% endblock %}

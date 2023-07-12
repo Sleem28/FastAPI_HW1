@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+
+
+<body>
+    <header class="center">
+        <h1 class="header__title">{{ title }}</h1>
+    </header>
+    <div class="content_block center">
+        {% block content %}
+        Page is not filled.
+        {% endblock %}
+    </div>
+    <footer class="center">
+        <p class="copyright">Test page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

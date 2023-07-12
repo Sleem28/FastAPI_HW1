@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for user in users %}
+<div class="user_info">
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.email }}</p>
+</div>
+<br>
+{% endfor %}
+<div class="user_btn">
+    <a href="http://127.0.0.1:8000/add-user">Add new user</a>
+</div>
+{% endblock %}
